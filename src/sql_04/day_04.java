@@ -319,11 +319,23 @@ public class day_04 {
     /*Senaryo 3: brands tablosundaki marka_id değeri 102’ye eşit veya büyük olanların marka_id’sini 2 ile çarparak değiştirin.*/
     /*Scenario 3: change the marka_id of brands in the brands table with a marka_id greater than or equal to 102 by multiplying by 2.*/
 /*
+
+UPDATE brands
+SET marka_id = marka_id * 2
+WHERE marka_id >= 102;
+
+SELECT * FROM brands
+
+/*Senaryo 4: brands tablosundaki tüm markaların calisan_sayisi değerlerini marka_id ile toplayarak güncelleyiniz.*/
+    /*Scenario 4: Update the calisan_sayisi values of all brands in the brands table by adding them with marka_id.*/
+/*
+    UPDATE brands
+    SET calisan_sayisi = marka_id + calisan_sayisi;
+
     SELECT * FROM brands
 
-    UPDATE brands
-    SET marka_id = marka_id * 2
-    WHERE marka_id >= 102;
+    /*Senaryo 5: employees4 tablosundan Ali Seker'in isyerini, 567890123 id'li çalışanın isyeri ismi ile güncelleyiniz.*/
+    /*Scenario 5: Update the workplace of Ali Seker from table employees4 with the workplace name of the employee with id 567890123.*/
 
-     */
+
 }
